@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-image: url(./img/background.jpg) ;
+   
+    background-size: 100%;
+    background-repeat:repeat-y; */
+    background-color: #8B6CB2;
+    color: white;
+    border: 2px solid chartreuse;
+}
+/* section navigation start from here */
+#navigation{
+   width: 100%;
+   border-bottom: 2px solid darkgrey;
+   padding-bottom: 20px;
+   position: sticky;
+   background-color: #634686;
+   box-shadow: 0px 3px 12px rgb(0 0 0 / 81%);
+}
+
+
+
+#logo{
+    width: 116px;
+    border: 3px solid darkgrey;
+    border-radius: 50%;
+    padding: 7px;
+    margin-top: 27px;
+    /* background-color: #8fffe5; */
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 81%);
+}
+.nav-menu{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.nav-menu li{
+    list-style-type: none;
+    justify-content: center;
+    padding: 0px 27px;
+}
+.nav-menu li a{
+    list-style-type: none;
+    justify-content: center;
+    /* margin-top: 100px; */
+    padding: 0px 27px;
+    color: white;
+    font-size: rem;
+    text-decoration: none;
+}
+.nav-menu li a:hover{
+    color: rgb(11, 13, 14);
+    
+}
+/* section navigation end here */
+
+/* section sahil start from here */
+#sahil{
+    max-width: 1024px;
+    margin: auto;
+    width: 50%;
+    width: 100%;
+   display: flex;
+    /* background-color: #d7fffa; */
+}
+.home{
+   
+    padding: 30px;
+}
+.button{
+    background: none;
+    padding: auto;
+    padding: 8px;
+    border-radius: 14px;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f6f6f6;
+}
+.button:hover{
+    background-color: rgb(18, 180, 230);
+}
+/* section sahil end here */
+
+/* section about start here */
+#about{
+    max-width: 1024px;
+    margin: auto;
+    width: 50%;
+    width: 100%;
+    /* background-color: #d7fffa; */
+}
+.btn {
+    border: 2px solid black;
+    padding: 6px 25px;
+    border-radius: 20px;
+    color: #e2d34c;
+    text-decoration: none ;
+}
+.btn:hover{
+    background-color: rgb(18, 180, 230);
+}
+
+.profile{
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(18, 180, 230);
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 81%);
+    }
+
+.about-info{
+    margin: 3%;
+    display: flex;
+}
+.para-column{
+    margin-left: 7%;
+    margin-top: 11%;
+    font-size: 1.1rem;
+}
+.section-title{
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+  }
+ 
+/* section about end here */
+/* section skills start here */
+#skills{
+    max-width: 1024px;
+    margin: auto;
+    width: 50%;
+    width: 100%;
+    /* background-color: #d7fffa; */
+}
+.big{
+    width: 400px;
+    margin: 20px;
+}
+.about-info{
+    margin: 3%;
+}
+.education{
+    margin: 2%;
+    padding: 4%;
+    font-size: 1.1rem;
+   
+}
+#project{
+    max-width: 1024px;
+    margin: auto;
+    width: 50%;
+    width: 100%;
+    /* background-color: #d7fffa; */
+}
+.brown{
+    color: rgb(18, 180, 230);
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 81%);
+}
+.brown:hover{
+    color:#e2d34c;
+}
+#link{
+    margin: 2%;
+}
+.new{
+    color: #F5E663;
+}
+.home__title-color{
+    color: rgb(18, 180, 230);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ABBCED;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  } 
+  .icons{
+    margin-left: 50%;
+    margin-top: 3%;
+  }
+  .design li{
+      margin: 10px 20px;
+      list-style-type: none;
+      font-size: 1.3rem;
+  }
+  .design li :hover{
+      color: black;
+  }
+/* for mobile start here */
+@media screen and (max-width: 900px) {
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-menu li{
+        padding: 11px;
+    }
+    .profile{
+        width: 250px;
+        margin: 5px;
+    }
+    .big{
+        width: 100px;
+        margin: 5px;
+    }
+   .about-info{
+       display: flex;
+       flex-direction: column;
+   }
+    .section{
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .para-column{
+        margin: 0%;
+    }
+    .icons{
+        margin-left: 30%;
+      }
+}
+/* end of mobile screen */
